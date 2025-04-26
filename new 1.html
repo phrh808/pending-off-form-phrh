@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            direction: ltr;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .date-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        input, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        input[type="date"] {
+            width: auto;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        hr {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+<form action="mailto:phrh808@gmail.com" method="post" enctype="text/plain">
+
+    <div class="section-title">Pending off Form</div>
+
+    <label>Staff name:</label>
+    <input type="text" name="Staff name">
+
+    <label>Staff number:</label>
+    <input type="text" name="Staff number">
+
+    <label>Day of Pending:</label>
+
+    <div class="date-row">
+        <label>Start from:</label>
+        <input type="date" name="Pending Start 1">
+        <label>End to:</label>
+        <input type="date" name="Pending End 1">
+    </div>
+
+    <div class="date-row">
+        <label>Start from:</label>
+        <input type="date" name="Pending Start 2">
+        <label>End to:</label>
+        <input type="date" name="Pending End 2">
+    </div>
+
+    <div class="date-row">
+        <label>Start from:</label>
+        <input type="date" name="Pending Start 3">
+        <label>End to:</label>
+        <input type="date" name="Pending End 3">
+    </div>
+
+    <label>Comment:</label>
+    <textarea name="Pending Comment" rows="4"></textarea>
+
+    <hr>
+
+    <div class="section-title">Short Leave Form</div>
+
+    <label>Staff name:</label>
+    <input type="text" name="Short Leave Staff name">
+
+    <label>Staff number:</label>
+    <input type="text" name="Short Leave Staff number">
+
+    <label>Day of Short Leave</label>
+
+    <div class="date-row">
+        <label>Start from:</label>
+        <input type="date" name="Short Leave Start">
+        <label>End to:</label>
+        <input type="date" name="Short Leave End">
+    </div>
+
+    <label>Purpose:</label>
+    <textarea name="Short Leave Purpose" rows="2"></textarea>
+
+    <label>Comment:</label>
+    <textarea name="Short Leave Comment" rows="2"></textarea>
+
+    <button type="submit">Send</button>
+
+</form>
+
+</body>
+</html>
